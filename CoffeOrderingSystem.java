@@ -21,6 +21,7 @@ public class CoffeOrderingSystem {
                 System.out.println("You have ordered Latte.");
                 billAmount += 300;
             } 
+            System.out.println(" Your ordered coffee amount is :" +billAmount);
             System.out.println("Want to add whipped cream for ₹30? (yes=1 / no=0): ");
             int whippedCreamChoice = sc.nextInt();
             if (whippedCreamChoice == 1){
