@@ -1,10 +1,10 @@
 import java.util.*;
-public class Calculatorusingdowhile{
+public class Calculatorwithdowhile{
     public static void main (String[] args){
         Scanner vam = new Scanner(System.in);
         int choice;
         do{
-            System.out.println("Welcome to Calculator Menu: ");
+            System.out.println("\nWelcome to Calculator Menu: ");
             System.out.println("1. Addition");
             System.out.println("2. Subtraction");
             System.out.println("3. Multiplication");
@@ -12,12 +12,13 @@ public class Calculatorusingdowhile{
             System.out.println("5. Modulus");
             System.out.println("6. Exit");
             System.out.print("Enter your choice (1-6): ");
-            choice = vam.nextInt();ṇ
+            choice = vam.nextInt();
+            int a,b;
             switch(choice){
                 case 1 -> {
                 System.out.println("Enter two numbers: ");
                  a = vam.nextInt();
-                b = vam.nextInt();
+                 b = vam.nextInt();
                 System.out.println("Result: " + (a+b));
                 }
                 case 2 -> {
@@ -52,7 +53,7 @@ public class Calculatorusingdowhile{
                     System.out.println("Error: Modulus by zero is not allowed.");
                 }
             }   
-                case 6 -> System.out.println("Exit the calculator. Goodbye!");
+                case 6 -> System.out.println("Exiting the calculator. Goodbye!");
                 default -> System.out.println("Invalid choice. Please enter a number between 1 and 6.");
 
             }
